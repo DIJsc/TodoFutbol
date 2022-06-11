@@ -1,0 +1,192 @@
+
+body{
+  
+    background-color:rgb(255, 255, 255);
+    margin: 0%;
+    background-image:  url("../img/imagen\ jugador\ azul.png");
+    overflow-x: hidden;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.texto1{
+  color: #4820E9;
+  font-family: 'Inter', sans-serif;
+  display: inline-block;
+  margin-top: -20px;
+  margin-left: 5%;
+  top:0;
+  padding-top: 5%;
+  font-size: larger;
+  width: 105%;
+  font: 'Poppins', sans-serif;
+}
+
+.texto2{
+  color: #a4a4a4;
+  font-family: 'Inter', sans-serif;
+  display: inline-block;
+  margin-top: -20px;
+  margin-left: 5%;
+  top:0;
+  padding-top: 5%;
+  font-size: small;
+  width: 105%;
+  font: 'Poppins', sans-serif;
+}
+.logo{
+    margin-left: 0.1%;
+  }
+  nav{
+      font-family: 'Inter', sans-serif;
+      display: inline-block;
+      margin-top: -20px;
+      margin-left: 0px;
+      top:0;
+      padding-top: 0;
+      overflow: hidden;
+      position: fixed;
+      width: 105%;
+      font: 'Poppins', sans-serif;
+      z-index: +2;
+      
+  }
+  nav ul{
+    font-family: 'Inter', sans-serif;
+      padding: 0.5;
+      height: 80%;
+      background-color: #f4f3f1;
+      text-align: center;
+      color: white;
+      font: 'Poppins', sans-serif;
+  }
+  ul{
+      display: flex;
+  }
+ 
+
+
+li{
+    list-style: none;
+}
+.topnav {
+    background-color: rgb(255, 255, 255);
+    opacity: 80%;
+    overflow: hidden;
+  }
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #272727;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .topnav a.active {
+    
+    color: darkblue;
+  }
+  .topnav .icon {
+    display: none;
+  }
+
+  
+
+
+   
+  .letranav{
+    text-decoration: none;
+    color: rgb(26, 26, 26);
+    font-family: 'Inter', sans-serif;
+    padding-left: 40%;
+    margin-top: 19px;
+}
+  .Inicio{
+    text-decoration: none;
+    color: rgb(40, 40, 40);
+    font-family: 'Inter', sans-serif;
+    padding-left: 40%;
+    margin-top: 19px;
+    float: center;
+  }
+  .Noticias{
+    text-decoration: none;
+    color: rgb(40, 40, 40);
+    font-family: 'Inter', sans-serif;
+    padding-left: 40%;
+    margin-top: 19px;
+    float: center;
+  }
+  .Pencas{
+    text-decoration: none;
+    color: rgb(40, 40, 40);
+    font-family: 'Inter', sans-serif;
+    padding-left: 40%;
+    margin-top: 19px;
+    float: center;
+  }
+  .Nosotros{
+    text-decoration: none;
+    color: rgb(40, 40, 40);
+    font-family: 'Inter', sans-serif;
+    padding-left: 40%;
+    margin-top: 19px;
+    float: center;
+  }
+  .Contacto{
+    text-decoration: none;
+    color: rgb(40, 40, 40);
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    margin-top: 19px;
+    float: center;
+  }
+
+
+
+
+  .Iniciar_sesion{
+    border-radius: 6.67px;
+    color:#4820E9;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    margin-top: 0.5%;
+    background-color: rgb(255, 255, 255);
+    border-color: #4820E9;
+    width: 170px;
+    height: 60.13px;
+     float: right;
+    
+  }
+
+.Registrarse{
+  border-radius: 6.67px;
+  color:#ffffff;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  margin-top: 0.5%;
+  background-color:#4820E9;
+  border-color: #4820E9;
+  width: 170px;
+  height: 60.13px;
+  float: right;
+}
+
+@media (max-width: 600px) {
+  .facet_sidebar {
+    display: none;
+   
+  }
+  .body{
+    background-image:  url("../img/i1911111262.jpg");
+  }
+}
