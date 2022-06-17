@@ -1,4 +1,4 @@
-var contador = new Date("Nov 21, 2022 16:00:00").getTime();
+var contador = new Date("Nov 21, 2022 16:37:40").getTime();
 var funcion = setInterval(function() {
     var hoy = new Date().getTime();
     var tiemporestante = contador - hoy;
@@ -8,7 +8,7 @@ var funcion = setInterval(function() {
     var hours = Math.floor((tiemporestante % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((tiemporestante % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((tiemporestante % (1000 * 60)) / 1000);
-    if (timeleft > 0) {
+    if (tiemporestante > 0) {
   
     document.getElementById("dias").innerHTML = days 
     document.getElementById("horas").innerHTML = hours 
