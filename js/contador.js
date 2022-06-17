@@ -1,4 +1,4 @@
-var contador = new Date("Nov 21, 2022 07:00:00").getTime();
+var contador = new Date("Nov 21, 2022 16:00:00").getTime();
 var funcion = setInterval(function() {
     var hoy = new Date().getTime();
     var tiemporestante = contador - hoy;
