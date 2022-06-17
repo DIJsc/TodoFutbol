@@ -112,9 +112,6 @@ li {
 
 
 
-.logo {
-  margin-left: 0.1%;
-}
 
 .Todo_Futbol {
   text-decoration: none;
@@ -355,8 +352,12 @@ text-decoration: none;
   cursor: pointer;
 }
 
-
-
+.fotoperf{
+    float: right;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
 
 
 

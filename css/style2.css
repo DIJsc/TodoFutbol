@@ -1,0 +1,267 @@
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0%;
+    background-image: url("../img/imagen\ jugador\ azul.png");
+    overflow-x: hidden;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .div2 {
+    padding-top: 6%;
+  }
+  
+  
+  
+.texto1 {
+    color: #4820E9;
+    font-family: 'Inter', sans-serif;
+    display: inline-block;
+    margin-top: -20px;
+    margin-left: 5%;
+    top: 0;
+    padding-top: 6%;
+    font-size: larger;
+    width: 105%;
+    font: 'Poppins', sans-serif;
+  }
+  .texto1 h1{
+    line-height: 55%;
+  }
+  
+  
+  .texto2 {
+    color: #787878;
+    font-family: 'Inter', sans-serif;
+    display: inline-block;
+    margin-top: -20px;
+    margin-left: 5%;
+    top: 0;
+    padding-top: 5%;
+    font-size: small;
+    width: 105%;
+    font: 'Poppins', sans-serif;
+  }
+  nav {
+    font-size: larger;
+    font-family: 'Inter', sans-serif;
+    display: inline-block;
+    margin-top: -20px;
+    margin-left: 0px;
+    top: 0;
+    padding-top: 0;
+    overflow: hidden;
+    position: fixed;
+    width: 105%;
+    font: 'Poppins', sans-serif;
+    z-index: +2;
+  
+  }
+  
+  nav ul {
+    font-family: 'Inter', sans-serif;
+    padding: 0.5;
+    height: 80%;
+    background-color: #f4f3f1;
+    text-align: center;
+    color: white;
+    font: 'Poppins', sans-serif;
+  }
+  
+  ul {
+    display: flex;
+  }
+  
+  
+  
+  li {
+    list-style: none;
+  }
+  
+  .topnav {
+    background-color: rgb(255, 255, 255);
+    opacity: 85%;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #272727;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: large;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    color: darkblue;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  
+  
+  .logo {
+    margin-left: 0.1%;
+  }
+  
+  .Todo_Futbol {
+    text-decoration: none;
+    color: rgb(26, 26, 26);
+    font-family: 'Inter', sans-serif;
+    padding-left: 40%;
+    margin-top: 19px;
+    font-size: larger;
+  
+  }
+  
+  
+
+  
+  
+  
+  
+  
+  
+  @media (max-width: 600px) {
+    .facet_sidebar {
+      display: none;
+  
+    }
+  
+    .body {
+      background-image: url("../img/i1911111262.jpg");
+    }
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* The Modal (background) */
+  .modal {
+    
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(24, 24, 24, 0.508);
+  }
+  /* Modal Content */
+  .modal-content {
+    color: #4820E9;
+    font-family: 'Inter', sans-serif;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    border-radius: 20px;
+    animation-duration: 1s;
+    animation-name: animate-fade;
+    animation-delay: 0s;
+    animation-fill-mode: backwards;
+  }
+  @keyframes animate-fade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .form{
+    width: 60%;
+    align-items: center;
+  }
+  .signupFrm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+  }
+  ::placeholder {
+    color:#4820E9;
+    font-family: 'Inter', sans-serif;
+  }
+  .input{
+  width: 110%;
+  }
+  .input{
+    border-radius: 5px;
+    size: 20%;
+   height: 30px;
+  }
+  .GoogletBtn {
+    border-radius: 15px;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    font-size: medium;
+    text-align: center;
+    background-color: #efefef;
+    border-color: #efefef00;
+    cursor: pointer;
+  }
+  .EnviartBtn {
+    border-radius: 8.67px;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-size: large;
+    text-align: center;
+    margin-top: 0.5%;
+    background-color: #4820E9;
+    border-color: #4820E9;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all .3s;
+    display: block;
+    margin-left: 90%;
+    float: right;
+  }
+  .EnviartBtn:hover {
+    font-size: larger;
+  }
+  .yacuenta{
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+    padding-top: 5%;
+    }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
