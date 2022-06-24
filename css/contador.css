@@ -1,39 +1,41 @@
-* {
+*{
     box-sizing: border-box;
 }
 
 body {
-    color: #000000;
+    color: #d3d3d3;
     font-family: 'Inter', sans-serif;
     background-size: cover;
-     align-items: center;
+    align-items: center;
     min-height: 100vh;
     margin: 0;
 }
 
-.h1{
+.h1 {
     font-weight: normal;
     font-size: 4rem;
     margin-top: 5rem;
 }
-.contenedor{
-    background-color: #637bf2;
-    border-radius: 20px;
+
+.contenedor {
+    background-color: #000c47;
     padding-left: 0%;
-    opacity: 80%;
     display: flex;
     justify-content: center;
 }
-.texto{
+
+.texto {
     font-weight: bold;
     font-size: 4rem;
     line-height: 1;
     margin: 1rem 2rem;
 }
+
 .contador {
     text-align: center;
 }
+
 .contador span {
     font-size: 1.4rem;
-    color: #000000;
+    color: #bbbbbb;
 }
