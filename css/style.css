@@ -10,6 +10,7 @@ body {
   background-image: url("../img/imagen\ jugador\ azul.png");
   z-index: -2;
   background-attachment: fixed;
+  height: 90vh;
 }
 
 .div2 {
