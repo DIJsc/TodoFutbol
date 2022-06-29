@@ -95,7 +95,7 @@ ul {
 li {
   list-style: none;
 }
-
+/*Problema, al recargar, baja el texto*/
 .topnav {
   background-color: rgba(228, 228, 228, 0.656);
   opacity: 85%;
