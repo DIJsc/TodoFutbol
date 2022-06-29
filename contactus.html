@@ -18,16 +18,16 @@
     <form action="submit.html">
   
       <label for="nom">Nombre</label>
-      <input type="text" id="nom" name="nombre" placeholder="Tu nombre">
+      <input type="text" id="nom" name="nombre" placeholder="Tu nombre" required>
   
       <label for="apell">Apellido</label>
-      <input type="text" id="apell" name="apellido" placeholder="Tu apellido">
+      <input type="text" id="apell" name="apellido" placeholder="Tu apellido" required>
 
       <label for="mail">Email</label>
-      <input type="text" id="mail" name="email" placeholder="Tu email">
+      <input type="text" id="mail" name="email" placeholder="Tu email" required>
   
       <label for="pais">Pais</label>
-      <select id="pais" name="pais">
+      <select id="pais" name="pais" required>
         <option value="uruguay">Uruguay</option>
         <option value="australia">Australia</option>
         <option value="canada">Canada</option>
@@ -43,7 +43,7 @@
       </select>
   
       <label for="escribir">Que nos quieres decir?</label>
-      <textarea id="escribir" name="escribir" placeholder="Deja tu comentario" style="height:120px"></textarea>
+      <textarea id="escribir" name="escribir" placeholder="Deja tu comentario" style="height:120px" required></textarea>
   
       <input type="submit" value="Enviar" >
   
