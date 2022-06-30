@@ -74,9 +74,10 @@
       <div class="modal-content">
         <span class="close">&times;</span>
 
+        
 
         <div class="signupFrm">
-          <form action="usuarioreg.html" class="form">
+          <form action="usuarioreg.html" class="form" onsubmit="verificarPasswords(); return false">
             <h1 class="title">Crea tu cuenta</h1>
 
             <div class="inputContainer">
@@ -88,11 +89,11 @@
             </div>
             <br>
             <div class="inputContainer">
-              <input type="password" class="input" placeholder="Contraseña">
+              <input type="password" class="input" id="passw1" placeholder="Contraseña">
             </div>
             <br>
             <div class="inputContainer">
-              <input type="password" class="input" placeholder="Confirmar Contraseña">
+              <input type="password" class="input" id="passw2" placeholder="Confirmar Contraseña">
             </div>
             <br>
             <div class="Google">
@@ -100,7 +101,7 @@
                   value="Continuar con Google"></p>
             </div>
             <br>
-           <input type="submit" class="EnviartBtn" value="Registrarse">
+            <input type="submit" class="EnviartBtn" value="Registrarse">
 
 
           </form>

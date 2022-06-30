@@ -141,7 +141,7 @@ li {
   color: rgb(40, 40, 40);
   font-family: 'Inter', sans-serif;
   padding-left: 40%;
-  margin-top: 19px;
+  margin-top: 15px;
   float: center;
 }
 
@@ -150,7 +150,7 @@ li {
   color: rgb(40, 40, 40);
   font-family: 'Inter', sans-serif;
   padding-left: 40%;
-  margin-top: 19px;
+  margin-top: 15px;
   float: center;
 }
 
@@ -159,7 +159,7 @@ li {
   color: rgb(40, 40, 40);
   font-family: 'Inter', sans-serif;
   padding-left: 40%;
-  margin-top: 19px;
+  margin-top: 15px;
   float: center;
 }
 
@@ -168,7 +168,7 @@ li {
   color: rgb(40, 40, 40);
   font-family: 'Inter', sans-serif;
   padding-left: 40%;
-  margin-top: 19px;
+  margin-top: 15px;
   float: center;
 }
 
@@ -189,7 +189,11 @@ li {
 
 
 
-
+.centrado {
+  margin: 24%;
+  text-align:center;
+  margin-top: 5px;
+}
 
 
 
