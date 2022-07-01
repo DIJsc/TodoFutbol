@@ -11,6 +11,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script>source = "js/functions"</script>
+  <link rel="stylesheet" href="js/contador.js">
+  <link rel="stylesheet" href="js/verificacionpassw.js">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
@@ -74,26 +76,36 @@
       <div class="modal-content">
         <span class="close">&times;</span>
 
-        
+        <div id="msg"></div>
+ 
+        <!-- Mensajes de Verificación -->
+        <div id="error" class="alert alert-danger ocultar" role="alert">
+            Las Contraseñas no coinciden, vuelve a intentar !
+        </div>
+        <div id="ok" class="alert alert-success ocultar" role="alert">
+            Las Contraseñas coinciden ! (Procesando formulario ... )
+        </div>
 
         <div class="signupFrm">
           <form action="usuarioreg.html" class="form" onsubmit="verificarPasswords(); return false">
             <h1 class="title">Crea tu cuenta</h1>
 
             <div class="inputContainer">
-              <input type="email" class="input" placeholder="Email">
+              <input type="email" class="input" placeholder="Email" required>
             </div>
             <br>
             <div class="inputContainer">
-              <input type="text" class="input" placeholder="Nombre de Usuario">
+              <input type="text" class="input" placeholder="Nombre de Usuario" required>
             </div>
             <br>
             <div class="inputContainer">
-              <input type="password" class="input" id="passw1" placeholder="Contraseña">
+              <label for="pass1"></label>
+              <input type="password" class="input" name="pass1" id="pass1" placeholder="Contraseña" required>
             </div>
             <br>
             <div class="inputContainer">
-              <input type="password" class="input" id="passw2" placeholder="Confirmar Contraseña">
+              <label for="pass2"></label>
+              <input type="password" class="input" name="pass2" id="pass2" placeholder="Confirmar Contraseña">
             </div>
             <br>
             <div class="Google">
