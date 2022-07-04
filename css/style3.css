@@ -26,20 +26,19 @@ body {
 }
 
 .texto1 {
-  color: #4820E9;
+  color: #2c2c2c;
   font-family: 'Inter', sans-serif;
   display: inline-block;
-  margin-top: -20px;
-  margin-left: 5%;
-  top: 0;
   padding-top: 6%;
-  font-size: larger;
+  margin-left: 34%;
+  font-size: xx-large;
   width: 105%;
   font: 'Poppins', sans-serif;
+
 }
 
 .texto1 h1 {
-  line-height: 55%;
+  line-height: 45%;
 }
 
 
@@ -72,16 +71,23 @@ nav {
 
 }
 
+
+
+
 ul {
   display: flex;
   margin-top: auto;
   margin-left: -40px;
+  height: 77px;
+  font: 'Poppins', sans-serif;
 }
 
 
 
 li {
   list-style: none;
+  height: 77px;
+  font: 'Poppins', sans-serif;
 }
 
 .topnav {
@@ -91,8 +97,24 @@ li {
   position: sticky;
   top: 0px;
   backdrop-filter: blur(4px);
-  height: 77px;
- 
+  height: 200px;
+
+}
+.elementos{
+  z-index: 1;
+}
+/*
+.barrita {
+  background-color: rgba(167, 0, 0, 0.656);
+  opacity: 85%;
+  overflow: hidden;
+  position: sticky;
+  top: 0px;
+  backdrop-filter: blur(4px);
+  height: 100px;
+  z-index: -2;
+  margin-top: 0%;
+
 }
 
 /* Style the links inside the navigation bar */
@@ -108,8 +130,8 @@ li {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+  
+  color: rgb(0, 8, 255);
 }
 
 .topnav a.active {
@@ -181,17 +203,56 @@ li {
   float: center;
 }
 
-.fotoperf{
-  
-  margin-left: auto;
+.fotoperf {
+  margin-left: 150%;
 }
 
+.Usuario {
+  margin-left: 150%;
+}
+
+.Opciones {
+  margin-left: 150%;
+}
+
+.cerrarcuenta {
+  margin-left: 150%;
+}
+
+
+#menu li>a {
+  color: rgb(30, 30, 30);
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  min-width: 100px;
+  font: 'Poppins', sans-serif;
+  
+}
+
+#menu li>a:hover {
+  color: #000;
+  background-color: #eaeaea;
+}
+
+#menu>li {
+  float: left;
+  text-align: center
+}
+
+#menu>li>ul {
+  display: none;
+}
+
+#menu>li:hover>ul {
+  display: block;
+}
 
 
 
 .centrado {
   margin: 24%;
-  text-align:center;
+  text-align: center;
   margin-top: 5px;
 }
 
@@ -211,15 +272,3 @@ li {
   }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
