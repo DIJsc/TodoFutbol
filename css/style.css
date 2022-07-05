@@ -36,11 +36,11 @@ body {
 
 .elemento2 {
 
-  margin-top: 12%;
+  margin-top: 10%;
   width: 100%;
-  height: 500px;
-  background-color: rgb(200, 200, 200);
- 
+  height: 600px;
+  background-color: rgb(119, 119, 119);
+
 
 }
 .elemento3 {
@@ -53,15 +53,26 @@ body {
 
 }
 
+.noticiadestacada{
+  margin-top: 1%;
+  width: 99%;
+  height: 450px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  z-index: 1;
+  padding-left: 5%;
+}
 
+.notdesdiv{
+  padding-left: 1%;
+
+}
 
 .texto1 {
   color: #4820E9;
   font-family: 'Inter', sans-serif;
   display: inline-block;
-  margin-top: -20px;
   margin-left: 5%;
-  top: 0;
   padding-top: 6%;
   font-size: larger;
   width: 105%;
@@ -146,8 +157,7 @@ li {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+  color: rgb(0, 8, 255);
 }
 
 .topnav a.active {
