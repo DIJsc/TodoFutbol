@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
   <link rel="stylesheet" href="css/style2.css">
   <link rel="stylesheet" media="(max-width: 800px)" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -53,7 +54,6 @@
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
-
  
   <div class="modal-content">
    
@@ -76,7 +76,36 @@
         </div>      
         <br>
         <div class="Google">
-          <p><img src="img/Glogo.png" width="15x" height="15px"><input type="submit" class="GoogletBtn" value="Continuar con Google"></p>
+          <script src="https://apis.google.com/js/platform.js" async defer></script>
+          <html>
+            <head>
+              <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+            </head>
+            <body>
+              <div id="my-signin2"></div>
+              <script>
+                function onSuccess(googleUser) {
+                  console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+                }
+                function onFailure(error) {
+                  console.log(error);
+                }
+                function renderButton() {
+                  gapi.signin2.render('my-signin2', {
+                    'scope': 'profile email',
+                    'width': 240,
+                    'height': 50,
+                    'longtitle': true,
+                    'theme': 'dark',
+                    'onsuccess': onSuccess,
+                    'onfailure': onFailure
+                  });
+                }
+              </script>
+            
+              <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+            </body>
+            </html>
         </div>
         <br>
         <input type="submit" class="EnviartBtn" value="Iniciar sesion">
