@@ -1,10 +1,13 @@
 body {
-    background-color: rgb(203, 203, 203);
-    margin: 0%;
-    overflow-x: hidden;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-color: rgb(173, 173, 173);
+  margin: 0%;
+  background-image: url("../img/sports-stadium.jpg");
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90vh;
   }
 
  .todo {
