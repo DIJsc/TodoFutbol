@@ -38,7 +38,7 @@ body {
 
   margin-top: 10%;
   width: 100%;
-  height: 900px;
+  height: 1000px;
   background-color: rgb(10, 10, 10);
 
 
@@ -115,20 +115,30 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
-.masnoticias {
+.botonybaner{
   display: flex;
+}
+.baner{
+  height: 100px;
+  width: 600px;
+  background-color: blueviolet;
+  margin-left: 12%;
+  background-image: url("../img/adidas\ banner.jpg");
+  background-size: cover;
 }
 .botonmasnoticias{
   border-radius: 6.67px;
   color: #ffffff;
   font-family: 'Inter', sans-serif;
   text-align: center;
-  margin-left: 80%;
+  margin-left: 30%;
+  margin-top: 4%;
   background-color: #4820E9;
   border-color: #4820E9;
   width: 170px;
   height: 60.13px;
 }
+
 .notdesdiv {
   padding-left: 1%;
   margin-top: -50px;
@@ -445,16 +455,6 @@ li {
   height: 30px;
 }
 
-.GoogletBtn {
-  border-radius: 15px;
-  color: #000000;
-  font-family: 'Inter', sans-serif;
-  font-size: medium;
-  text-align: center;
-  background-color: #efefef;
-  border-color: #efefef00;
-  cursor: pointer;
-}
 
 .EnviartBtn {
   border-radius: 8.67px;

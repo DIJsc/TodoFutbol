@@ -46,3 +46,133 @@
       </li>
 
     </div>
+
+<div class="Noticia">
+    <h1>Noticias</h1>
+</div>
+
+
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+  
+          <div class="signupFrm">
+            <form action="php/register.php" method="post" class="form">
+              <h1 class="title">Crea tu cuenta</h1>
+  
+              <div class="inputContainer">
+                <input type="email" class="input" name="email" placeholder="Email" required>
+              </div>
+              <br>
+              <div class="inputContainer">
+                <input type="text" class="input" name="nombre" placeholder="Nombre de Usuario" required>
+              </div>
+              <br>
+              <div class="inputContainer">
+                <label for="pass1"></label>
+                <input type="password" class="input" name="pass1" id="pass1" placeholder="Contraseña" required>
+              </div>
+              <br>
+              <div class="inputContainer">
+                <label for="pass2"></label>
+                <input type="password" class="input" name="pass2" id="pass2" placeholder="Confirmar Contraseña">
+              </div>
+              <br>
+              <div class="Google">
+                <script src="https://apis.google.com/js/platform.js" async defer></script>
+                <meta name="google-signin-client_id"
+                  content="291443347597-l5vm3fmm0244lcv7c0m1i6uh8q7vs7nu.apps.googleusercontent.com.">
+                <html>
+  
+                <head>
+                  <meta name="google-signin-client_id"
+                    content="291443347597-l5vm3fmm0244lcv7c0m1i6uh8q7vs7nu.apps.googleusercontent.com  ">
+                </head>
+  
+                <body>
+                  <div id="my-signin2"></div>
+                  <script>
+                    function onSuccess(googleUser) {
+                      console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+                    }
+                    function onFailure(error) {
+                      console.log(error);
+                    }
+                    function renderButton() {
+                      gapi.signin2.render('my-signin2', {
+                        'scope': 'profile email',
+                        'width': 240,
+                        'height': 50,
+                        'longtitle': true,
+                        'theme': 'dark',
+                        'onsuccess': onSuccess,
+                        'onfailure': onFailure
+                      });
+                    }
+                  </script>
+  
+                  <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+                </body>
+  
+                </html>
+              </div>
+              <br>
+              <input type="submit" class="EnviartBtn" value="Registrarse">
+  
+  
+            </form>
+  
+          </div>
+  
+          <a href="iniciarsesion.html">
+            <p class="yacuenta">Ya tiene una cuenta?</p>
+          </a>
+  
+  
+        </div>
+  
+      </div>
+  
+      <script>
+  
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementById("myBtn");
+        var span = document.getElementsByClassName("close")[0];
+  
+  
+        btn.onclick = function () {
+          modal.style.display = "block";
+        }
+  
+        span.onclick = function () {
+          modal.style.display = "none";
+        }
+  
+        window.onclick = function (event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+  
+  
+      </script>
+  
+  
+    
+<div class="footerdiv">
+
+    <div>
+      <img src="img/logo_size_invert.jpg">
+    </div>
+  
+    <div>
+      <strong>Todo Futbol</strong>
+    </div>
+  
+  
+  </div>
+  
