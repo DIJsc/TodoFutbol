@@ -6,7 +6,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.footerdiv{
+.footerdiv {
   align-items: center;
   background-color: #262626;
   bottom: 0;
@@ -19,7 +19,7 @@ body {
   text-transform: uppercase;
   width: 100%;
   z-index: -2;
-  
+
 }
 
 
@@ -27,7 +27,7 @@ body {
   background-image: url("../img/imagen\ jugador\ azul.png");
   z-index: -2;
   background-attachment: fixed;
- 
+
 }
 
 .div2 {
@@ -38,11 +38,12 @@ body {
 
   margin-top: 10%;
   width: 100%;
-  height: 600px;
-  background-color: rgb(119, 119, 119);
+  height: 900px;
+  background-color: rgb(10, 10, 10);
 
 
 }
+
 .elemento3 {
 
   margin-top: 12%;
@@ -53,20 +54,91 @@ body {
 
 }
 
-.noticiadestacada{
-  margin-top: 1%;
+
+.titulonot {
+  color: #cacaca;
+  font-family: 'Inter', sans-serif;
+  display: inline-block;
+  margin-left: 5%;
+  padding-top: 7%;
+  font-size: xx-large;
+  width: 105%;
+  font: 'Poppins', sans-serif;
+}
+
+.noticiadestacada {
+  margin-top: -2%;
   width: 99%;
-  height: 450px;
-  background-color: rgb(177, 0, 0);
-  border-radius: 20px;
+  height: 600px;
   z-index: 1;
   padding-left: 5%;
+  display: flex;
 }
 
-.notdesdiv{
+.imgcontenedor {
+  background-image: url("../img/ibai.jpg");
+  background-size: cover;
+  width: 700px;
+  height: 450px;
+  margin-top: 5%;
+  margin-left: -3%;
+  background-color: #4820E9;
+
+}
+
+.textocontenedor {
+  width: 500px;
+  height: 450px;
+  margin-top: 5%;
+  margin-left: 10%;
+  
+}
+
+.titulotexto {
+  width: 100%;
+  height: 15%;
+  
+  font-family: 'Inter', sans-serif;
+}
+
+.textonoticia {
+  width: 100%;
+  height: 75%;
+  
+  font-family: 'Inter', sans-serif;
+}
+
+.fechanoticia {
+  width: 100%;
+  height: 10%;
+ 
+  font-family: 'Inter', sans-serif;
+}
+
+.masnoticias {
+  display: flex;
+}
+.botonmasnoticias{
+  border-radius: 6.67px;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  margin-left: 80%;
+  background-color: #4820E9;
+  border-color: #4820E9;
+  width: 170px;
+  height: 60.13px;
+}
+.notdesdiv {
   padding-left: 1%;
-
+  margin-top: -50px;
 }
+
+
+
+
+
+
 
 .texto1 {
   color: #4820E9;
@@ -426,12 +498,11 @@ li {
   text-decoration: none;
   cursor: pointer;
 }
- 
+
 .ocultar {
-    display: none;
-}
- 
-.mostrar {
-    display: block;
+  display: none;
 }
 
+.mostrar {
+  display: block;
+}
