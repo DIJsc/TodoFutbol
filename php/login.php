@@ -7,7 +7,7 @@ if(isset($_POST['email']) && isset($_POST['nombre']) && isset($_POST['pass1'])){
     $pass1 = trim($_POST['pass1']);
     //Conexion con bd
     include 'conexion.php';
-    $sql = "SELECT mail, nombreusuario, pass1 FROM usuario WHERE mail = '".$email."'";
+    $sql = "SELECT pass1 FROM usuario WHERE mail = '".$email."'";
 
     if (!$resultado = $conexion->query($sql)) {
         //La consulta fallo 
@@ -22,9 +22,7 @@ if(isset($_POST['email']) && isset($_POST['nombre']) && isset($_POST['pass1'])){
         }else{
             //Usuario existe, valido la contraseña
             $vector = $resultado->fetch_assoc();
-            if ($vector == null ){
-            echo "es nulo el vector";
-            };
+        
             if($vector != null && strcmp($vector['pass1'],$pass1)==0){
                 //La contraseña ingresada por el usuario es igual a la de la BD
                 $conexion->close();
