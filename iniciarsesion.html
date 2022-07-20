@@ -60,19 +60,19 @@
 
 
     <div class="signupFrm">
-      <form action="" class="form">
+      <form action="php/login.php" method="post" class="form">
         <h1 class="title">Iniciar sesion</h1>
 
         <div class="inputContainer">
-          <input type="email" class="input" placeholder="Email">
+          <input type="email" class="input" name="email" placeholder="Email">
         </div>
         <br>
         <div class="inputContainer">
-          <input type="text" class="input" placeholder="Nombre de Usuario">
+          <input type="text" class="input" name="nombre" placeholder="Nombre de Usuario">
         </div>
         <br>
         <div class="inputContainer">
-          <input type="password" class="input" placeholder="Contraseña">
+          <input type="password" class="input" name="pass1" placeholder="Contraseña">
         </div>      
         <br>
         <div class="Google">
@@ -102,7 +102,7 @@
                   });
                 }
               </script>
-            
+        
               <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
             </body>
             </html>
