@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/contador.css">
   <link rel="stylesheet" media="(max-width: 800px)" href="style.css" />
@@ -76,16 +77,6 @@
       <div class="modal-content">
         <span class="close">&times;</span>
 
-        <div id="msg"></div>
- 
-        <!-- Mensajes de Verificación -->
-        <div id="error" class="alert alert-danger ocultar" role="alert">
-            Las Contraseñas no coinciden, vuelve a intentar !
-        </div>
-        <div id="ok" class="alert alert-success ocultar" role="alert">
-            Las Contraseñas coinciden ! (Procesando formulario ... )
-        </div>
-
         <div class="signupFrm">
           <form action="usuarioreg.html" class="form" onsubmit="verificarPasswords(); return false">
             <h1 class="title">Crea tu cuenta</h1>
@@ -109,8 +100,40 @@
             </div>
             <br>
             <div class="Google">
-              <p><img src="img/Glogo.png" width="15x" height="15px"><input type="submit" class="GoogletBtn"
-                  value="Continuar con Google"></p>
+              <script src="https://apis.google.com/js/platform.js" async defer></script>
+              <meta name="google-signin-client_id" content="291443347597-l5vm3fmm0244lcv7c0m1i6uh8q7vs7nu.apps.googleusercontent.com.">
+              <html>
+
+              <head>
+                <meta name="google-signin-client_id" content="291443347597-l5vm3fmm0244lcv7c0m1i6uh8q7vs7nu.apps.googleusercontent.com  ">
+              </head>
+
+              <body>
+                <div id="my-signin2"></div>
+                <script>
+                  function onSuccess(googleUser) {
+                    console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+                  }
+                  function onFailure(error) {
+                    console.log(error);
+                  }
+                  function renderButton() {
+                    gapi.signin2.render('my-signin2', {
+                      'scope': 'profile email',
+                      'width': 240,
+                      'height': 50,
+                      'longtitle': true,
+                      'theme': 'dark',
+                      'onsuccess': onSuccess,
+                      'onfailure': onFailure
+                    });
+                  }
+                </script>
+
+                <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+              </body>
+
+              </html>
             </div>
             <br>
             <input type="submit" class="EnviartBtn" value="Registrarse">
@@ -180,14 +203,14 @@
     </div>
 
 
-<div class="notdesdiv"> 
-  <div class="noticiadestacada">
-    hoola
+    <div class="notdesdiv">
+      <div class="noticiadestacada">
+        hoola
 
- </div>
-</div>
- 
- 
+      </div>
+    </div>
+
+
 
 
 
@@ -202,15 +225,15 @@
 
 <div class="footerdiv">
 
-    <div>
-      <img src="img/logo_size_invert.jpg" >
-    </div>
-  
-    <div>
-      <strong>Todo Futbol</strong>
-    </div>
+  <div>
+    <img src="img/logo_size_invert.jpg">
+  </div>
 
-  
+  <div>
+    <strong>Todo Futbol</strong>
+  </div>
+
+
 </div>
 
 
