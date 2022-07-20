@@ -103,19 +103,8 @@ li {
 .elementos{
   z-index: 1;
 }
-/*
-.barrita {
-  background-color: rgba(167, 0, 0, 0.656);
-  opacity: 85%;
-  overflow: hidden;
-  position: sticky;
-  top: 0px;
-  backdrop-filter: blur(4px);
-  height: 100px;
-  z-index: -2;
-  margin-top: 0%;
 
-}
+
 
 /* Style the links inside the navigation bar */
 .topnav a {
