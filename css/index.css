@@ -242,6 +242,10 @@ li {
   color: rgb(0, 8, 255);
 }
 
+.selected{
+  color: blue !important;
+}
+
 .topnav a.active {
   color: darkblue;
 }

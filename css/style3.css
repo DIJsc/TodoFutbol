@@ -80,6 +80,7 @@ ul {
   margin-left: -40px;
   height: 77px;
   font: 'Poppins', sans-serif;
+  justify-content: space-around;
 }
 
 
@@ -95,9 +96,8 @@ li {
   opacity: 85%;
   overflow: hidden;
   position: sticky;
-  top: 0px;
   backdrop-filter: blur(4px);
-  height: 200px;
+  height: 85px;
 
 }
 .elementos{
@@ -191,50 +191,13 @@ li {
   margin-top: 19px;
   float: center;
 }
-
-.fotoperf {
-  margin-left: 150%;
-}
-
-.Usuario {
-  margin-left: 150%;
-}
-
-.Opciones {
-  margin-left: 150%;
-}
-
-.cerrarcuenta {
-  margin-left: 150%;
-}
-
-
-#menu li>a {
-  color: rgb(30, 30, 30);
-  padding: 10px;
-  display: block;
+.fotoperf{
   text-decoration: none;
-  min-width: 100px;
-  font: 'Poppins', sans-serif;
-  
-}
-
-#menu li>a:hover {
-  color: #000;
-  background-color: #eaeaea;
-}
-
-#menu>li {
-  float: left;
-  text-align: center
-}
-
-#menu>li>ul {
-  display: none;
-}
-
-#menu>li:hover>ul {
-  display: block;
+  color: rgb(40, 40, 40);
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  float: center;
+  margin-right: 1%;
 }
 
 
@@ -242,7 +205,7 @@ li {
 .centrado {
   margin: 24%;
   text-align: center;
-  margin-top: 5px;
+  margin-top: 2px;
 }
 
 

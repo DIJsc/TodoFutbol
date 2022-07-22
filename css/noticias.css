@@ -9,6 +9,10 @@ body {
     height: 90vh;
   }
   
+  .selected{
+    color: blue !important;
+  }
+
   .footerdiv {
     align-items: center;
     background-color: #262626;
