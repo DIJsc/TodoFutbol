@@ -1,10 +1,9 @@
 <?php
 $error="";
 // recibo por método post el email, el usuario y contraseña
-if(isset($_POST['email']) && isset($_POST['nombre']) && isset($_POST['pass1'])){
+if(isset($_POST['email']) && isset($_POST['pass1'])){
     $email =trim( $_POST['email']);
-    $nombre =trim( $_POST['nombre']);
-    $pass1 = trim($_POST['pass1']);
+    $pass1 = trim($_POST['pass1'], PASSWORD_BCRYPT);
     //Conexion con bd
     include 'conexion.php';
     $sql = "SELECT pass1 FROM usuario WHERE mail = '".$email."'";
@@ -22,11 +21,10 @@ if(isset($_POST['email']) && isset($_POST['nombre']) && isset($_POST['pass1'])){
         }else{
             //Usuario existe, valido la contraseña
             $vector = $resultado->fetch_assoc();
-        
             if($vector != null && strcmp($vector['pass1'],$pass1)==0){
                 //La contraseña ingresada por el usuario es igual a la de la BD
                 $conexion->close();
-                header('Location: ../usuarioreg.html');
+                header('Location: ../usuarioreg.php');
             }else{
                 $error="No se pudo completar tu log in, porfavor intentelo nuevamente   ";
             }
