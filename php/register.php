@@ -18,7 +18,6 @@
 
         session_start();
         require_once 'conexionPDO.php';
-     
         if(ISSET($_POST['register'])){
             if($_POST['email'] != "" || $_POST['nombre'] != "" || $_POST['pass1'] != "" || $_POST['pass2'] != ""){
                 try{
@@ -33,6 +32,9 @@
                     $conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
                     $sql = $conexion->prepare("CALL usuario(?, ?, ?, ?)");
                     $conexion->exec($sql);
+                    }else{
+                        echo "Las contraseñas no coinciden";
+                        $conexion = null;
                     }
                 }catch(PDOException $e){
                     echo $e->getMessage();

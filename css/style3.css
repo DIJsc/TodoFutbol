@@ -9,7 +9,22 @@ body {
   height: 90vh;
 }
 
-
+#myBtn {
+  border-radius: 6.67px;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  margin-top: 0.5%;
+  background-color: #4820E9;
+  border-color: #4820E9;
+  width: 170px;
+  height: 60.13px;
+  float: right;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all .4s;
+}
 
 .div2 {
   padding-top: 6%;

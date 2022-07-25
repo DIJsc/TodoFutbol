@@ -30,34 +30,14 @@
           <a class="Noticias" href="#Noticias">Noticias</a>
           <a class="Pencas" href="#Pencas">Pencas</a>
           <a class="Nosotros" href="#Nosotros">Nosotros</a>
+          <button id="myBtn" onclick="location.pathname='php/logout.php'">
+          <h3>Salir</h3>
+          </button>
         </ul>
-        <ul id="menu">
-        <li><a class="fotoperf"> <img src="img/account_circle_FILL0_wght400_GRAD0_opsz48.png"></a>
-          <ul>
-            <li><a class="Usuario" href="">Usuario</a></li>
-            <li><a class="Opciones" href="">Opciones</a></li>
-            <li><a class="cerrarcuenta" href="index.html">Cerrar cuenta</a></li>
-            <?php
-              session_start();
-              session_destroy();
-              header('location: index.html');
-            ?>
-          </ul>  
-        </li>
-    </li>
+      <a class="fotoperf"> <img src="img/account_circle_FILL0_wght400_GRAD0_opsz48.png"></a>
     </ul>
     </ul>
     </li>
   
   
   </header>
-
-
-
-
-
-
-
-</body>
-
-</html>
